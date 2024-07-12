@@ -4,49 +4,82 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Results summary component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <link rel="stylesheet" href="styles/custom.css"/>
 </head>
 <body>
 <div class="container">
-  <div class="container">
+  <div class="container" id="result-summary">
     <h1>Your Result</h1>
-    <h2 class="result" id="overall-result">76 of 100</h2>
+    <div class="container" id="score-bubble">
+        <p class="result numerator">76</p> 
+        <p class="result denominator">of 100</p>
+    </div>
     <h3>Great</h3>
-    <p>You scored higher than 65% of the people who have taken these tests.</p>
+    <p id="score-interpretation">You scored higher than 65% of the people who have taken these tests.</p>
   </div>
-  <div class="container">
+  <div class="container" id="breakdown-container">
     <h2>Summary</h2>
-    <div class="container">
-      <h3>Reaction</h3>
-      <p>80 / 100</p>
+    <div id="breakdown-results-container">
+        <div class="category-score-container">
+            <div class="category-icon-pair">
+                <img src="assets/images/icon-reaction.svg" alt="Reaction Logo"/>
+                <h3 id="category-reaction" class="category-name">Reaction</h3>
+            </div>
+            <div class="score-container">
+                <p class="score numerator">80</p>
+                <p class="score denominator">/ 100</p>
+            </div>
+        </div>
+        <div class="category-score-container">
+            <div class="category-icon-pair">
+                <img src="assets/images/icon-memory.svg" alt="Memory Logo"/>
+                <h3 id="category-memory" class="category-name">Memory</h3>
+            </div>
+            <div class="score-container">
+                <p class="score numerator">92</p>
+                <p class="score denominator">/ 100</p>
+            </div>
+        </div>
+        <div class="category-score-container">
+            <div class="category-icon-pair">
+                <img src="assets/images/icon-verbal.svg" alt="Verbal Logo"/>
+                <h3 id="category-verbal" class="category-name">Verbal</h3>
+            </div>
+            <div class="score-container">
+                <p class="score numerator">61</p>
+                <p class="score denominator">/ 100</p>
+            </div>
+        </div>
+        <div class="category-score-container">
+            <div class="category-icon-pair">
+                <img src="assets/images/icon-visual.svg" alt="Visual Logo"/>
+                <h3 id="category-visual" class="category-name">Visual</h3>
+            </div>
+            <div class="score-container">
+                <p class="score numerator">72</p> 
+                <p class="score denominator">/ 100</p>
+            </div>
+        </div>
+        <button>Continue</button>
     </div>
-    <div class="container">
-      <h3>Memory</h3>
-      <p>92 / 100</p>
-    </div>
-    <div class="container">
-      <h3>Verbal</h3>
-      <p>61 / 100</p>
-    </div>
-    <div class="container">
-      <h3>Visual</h3>
-      <p>72 / 100</p>
-    </div>
-    <button>Continue</button>
   </div>
   
 </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by Alec Neevel.
   </div>
 </body>
 </html>
