@@ -20,8 +20,15 @@
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 18px;
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+}
+
+html, body {
+    margin: 0px;
+    height: 0px;
+    height: 100vh;
 }
 
 #result-summary {
@@ -44,7 +51,6 @@
     padding-bottom: 1.5rem;
     border-radius: 100px;
     background-image: linear-gradient(var(--violet-blue), var(--persian-blue));
-    border-radius: 100px;
 }
 
 #result-summary h1 {
@@ -181,4 +187,60 @@ button {
 
 #category-visual {
     color: #1125D6;   
+}
+
+@media screen and (min-width: 1440px) {
+    * {
+        font-size: 36px;
+    }
+
+    #base-container {
+        display: flex;
+        height: 100vh;
+    }
+
+    #result-summary {
+        width: 50vw;
+        height: 100vh;
+        border-radius: 30px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #result-summary h1 {
+        margin-top: 0px;
+        width: 50%;
+        font-size: 1.1rem;
+    }
+
+    .result.numerator {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        font-size: 3.5rem;
+    }
+
+    #score-bubble {
+        padding: 2rem;
+        margin: 0px;
+        width: 50%;
+        border-radius: 10rem;
+    }
+
+    #result-summary h3 {
+        margin: 0;
+    }
+
+    #breakdown-container {
+        width: 50vw;
+        height: 100vh;
+        padding: 1rem 1rem 0rem 0rem;
+    }
+
+    #score-interpretation {
+        width: 60%;
+    }
+
+    .attribution {
+        display: none;
+    }
 }
