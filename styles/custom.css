@@ -240,6 +240,27 @@ button {
         width: 60%;
     }
 
+    #breakdown-container {
+        padding-top: 2rem;
+        padding-left: 1.5rem;
+    }
+
+    #breakdown-container h2 {
+        padding-bottom: 3rem;
+    }
+
+    .category-icon-pair {
+        padding-left: 0.5rem;
+    }
+
+    img {
+        height: 100%;
+    }
+
+    button {
+        margin-top: 1.5rem;
+    }
+
     .attribution {
         display: none;
     }
