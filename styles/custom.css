@@ -214,9 +214,8 @@ button {
     }
 
     .result.numerator {
-        margin-left: 1rem;
-        margin-right: 1rem;
         font-size: 3.5rem;
+        width: 100%;
     }
 
     #score-bubble {
